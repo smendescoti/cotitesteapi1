@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CentralDePedidos.Application\CentralDePedidos.Application.csproj" />
+    <ProjectReference Include="..\CentralDePedidos.Domain\CentralDePedidos.Domain.csproj" />
+    <ProjectReference Include="..\CentralDePedidos.Infra.Data\CentralDePedidos.Infra.Data.csproj" />
+    <ProjectReference Include="..\CentralDePedidos.Infra.EventBus\CentralDePedidos.Infra.EventBus.csproj" />
+  </ItemGroup>
+
+</Project>
