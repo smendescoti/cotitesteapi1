@@ -1,4 +1,4 @@
-name: Build and deploy ASP.Net Core app to Azure Web App - balta-blog-2812
+name: Build and deploy ASP.Net Core
 
 on:
   push:
@@ -39,6 +39,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "cotitesteapiapp1"
+          app-name: "apitestewebapp"
           slot-name: "production"
           package: ${{env.DOTNET_ROOT}}/myapp
