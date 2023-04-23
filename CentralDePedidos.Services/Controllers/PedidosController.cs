@@ -28,5 +28,11 @@ namespace CentralDePedidos.Services.Controllers
                    pedido = command
                });
         }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok();
+        }
     }
 }
