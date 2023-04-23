@@ -29,5 +29,10 @@ namespace CentralDePedidos.Services.Controllers
                });
         }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok();
+        }
     }
 }
